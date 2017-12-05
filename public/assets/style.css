@@ -1,0 +1,251 @@
+
+body {
+	color:#333;
+	font:300 15px/15px Roboto,Arial,Helvetica;
+	background:url(../images/bg.jpg) right no-repeat fixed #fff;
+	-webkit-font-smoothing:antialiased;
+	background-size: cover;
+}
+
+a:hover{
+	color:#666;
+}
+
+/*สามารถเปิดในเบราว์เซอร์ต่างๆได้*/
+.btn,a,.btn:hover,a:hover {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+outline: none !important;
+}
+
+.item img{
+	width: 100%!important ;
+}
+.item{
+	margin-bottom: 20px;
+}
+
+h2{
+	margin: 0;
+	line-height: 1em;
+}
+
+h2{
+	font:300 2.5em Roboto,Arial,Helvetica;
+	margin-bottom: 1.5em;
+}
+
+
+p{
+	font-size:16pt;
+	line-height: 1.7em;
+	margin-bottom: 1.7em;
+}
+
+.spacer{
+	padding: 6em 0;
+}
+
+.btn{
+	border:none;border-radius: 0;
+	padding: 1em 4em;
+	background: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+}
+.btn:hover,.btn:active{
+	color: #fff;
+}
+
+.btn-default{
+	color: #ccc;
+	border: 1px solid #aaa;
+}
+
+.btn-default:hover,.btn-default:active{
+	background: rgba(0,0,0,0.8);
+}
+
+.btn-primary{color: #fff;
+	background:#e89f10;
+	width: 100%;
+	outline: none;
+}
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus{
+	background:#f3c024;
+	box-shadow: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed!important;
+    top: 0;
+    width: 100%;
+  font-family: 'Kanit', sans-serif;
+		z-index: 100000;
+		font-size: 16pt;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+		z-index: 10000;
+    font-family: 'Kanit', sans-serif;
+}
+.navbar a:hover{
+    color: white;
+}
+#head,.carousel{
+	margin-top: 0;
+}
+p {
+	font-family: 'Kanit', sans-serif;
+}
+.black-ribbon {
+    position: fixed;
+    z-index: 999999;
+    width: 70px;
+  }
+  @media only all and (min-width: 768px) {
+    .black-ribbon {
+      width: auto;
+    }
+  }
+
+  .stick-left { left: 0; }
+  .stick-right { right: 0; }
+  .stick-top { top: 0; }
+  .stick-bottom { bottom: 0; }
+/*works*/
+
+/*กรอบ*/
+#works figcaption a{
+	border:1px solid #fff;
+	margin-top: 1em;
+	display: inline-block;
+	color: #fff;
+	padding: 0 2em;}
+/*ตัวอักษร*/
+#works figcaption a:hover{
+	text-decoration: none;
+	padding: 0 3em;
+}
+
+/*works*/
+
+/*bootstrap*/
+#myCarousel img {
+	height: 90vh;
+	object-fit: cover;
+	object-position: top;
+}
+
+/*บังคับให้ขนาดกรอบและรูปเท่ากัน*/
+#works figure, #works img{
+	height: 350px;
+}
+#works img{
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.grid figure p{
+	font-size: 14pt;
+}
+
+.glyphicon-chevron-left::before, .glyphicon-chevron-right::before{
+	content: "";
+}
+.blueimp-gallery>.prev, .blueimp-gallery>.next{
+	border: 0;
+}
+
+
+
+/*footer*/
+.footer{
+	background-color: #111;
+	color: #fff;
+  font-size: 1em;
+	color: #aaa;
+}
+.footer a{
+	color: #aaa;margin: 0 1em;
+}
+
+.gototop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgba(0,0,0,0.5);
+	padding: 10px;color: #fff;
+}
+.gototop i{
+	line-height: 0.5em;
+}
+
+/*สำหรับหน้าจอขนาด 1200px*/
+@media (max-width: 1200px) {
+	body{font:300 13px/13px Roboto,Arial,Helvetica;}
+	.grid figure h2{font: 700 1.5em Roboto,Arial,Helvetica;}
+	figure.effect-oscar figcaption{padding: 12%;}
+	figure.effect-oscar figcaption::before,figure.effect-chico figcaption::before{top: 20px;right: 20px;bottom: 20px;left: 20px;}
+
+}
+
+/*สำหรับหน้าจอขนาด 900px*/
+@media (max-width: 900px) {
+	.btn{
+		padding: 1em 2em;
+	}
+	figure.effect-chico figcaption {
+		padding: 2em;
+	}
+	figure.effect-oscar figcaption {
+		padding: 20%;
+	}
+	figure.effect-chico figcaption::before{
+		top: 10px;right: 10px;
+		bottom: 10px;
+		left: 10px;
+	}
+	.grid figure.effect-chico p{
+		font-size: 0.6em;
+		line-height: 1.5em;
+	}
+}
+
+/*สำหรับหน้าจอขนาด 767px*/
+@media (max-width: 767px) {
+	body{
+		font:300 12px/12px Roboto,Arial,Helvetica;}
+
+	.carousel-caption,.carousel-control,.carousel-indicators{
+		display: none;
+	}
+	h2.text-center{
+		text-align: left;font-size: 1.7em;
+	}
+	.highlight-info .overlay{
+		padding-bottom: 2em;
+	}
+	.grid.team div{
+		margin: 0;padding: 0;
+	}
+	figure.effect-chico figcaption {
+		padding: 1.5em;
+	}
+	.footer{
+		margin-top: 2em;padding-bottom: 2em;
+	}
+}

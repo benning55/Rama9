@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+@import url('https://fonts.googleapis.com/css?family=Pridi');
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+body {
+    margin: 0;
+}
+.navbar {
+    z-index: 1000;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed!important; 
+    top: 0; 
+    width: 100vw; 
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+.navbar a:hover{
+    color: white;
+}
+
+.navbar li {
+    list-style: none;
+}
+.black-ribbon {
+    position: fixed;
+    z-index: 9999;
+    width: 70px;
+  }
+  @media only all and (min-width: 768px) {
+    .black-ribbon {
+      width: auto;
+    }
+  }
+  
+  .stick-left { left: 0; }
+  .stick-right { right: 0; }
+  .stick-top { top: 0; }
+  .stick-bottom { bottom: 0; }
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Trirong";
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.line  {
+    margin: 50px;
+	border-top: 3px double #8c8b8b;
+}
+
+p {
+    color: #444;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.spacing {
+    letter-spacing: 5px;
+}
+article {
+     background-color: #fff;
+     margin: 0;
+ }
+
+header {
+
+    background-image: url("/images/king03_34.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #fff; 
+    text-align: center;
+    padding: 180px 0;
+    font-family: 'Pridi';
+    
+}
+.texttop{
+    margin-top: 25px;
+    font-size: 50px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.padding {
+    padding: 60px 0 0;    
+}
+
+.padding2 {
+    padding:  0 0 60px;    
+}
+
+ article section {
+     width:1024px;
+     margin: 0 auto;
+ }
+
+ a:-webkit-any-link {
+     color: #FFF;
+     text-decoration: none;
+ }
+
+.white {
+    color:  #fff;
+    text-decoration: none;
+}
+
+ nav ul li {    
+    display: inline-block;
+    padding: 20px 6px;
+    margin: 0 20px;
+    list-style: none;
+ }
+
+ nav ul {
+    margin: 0;
+ }
+
+.center {
+    text-align: center;
+    color:  #fff;
+}
+
+footer {
+    background-color:  #444;
+}
+
+blockquote {
+    color: #666;
+    letter-spacing: 1px
+}
+
+footer section {
+    padding: 60px 0;
+}
+
+span{
+    z-index: 10;
+}
